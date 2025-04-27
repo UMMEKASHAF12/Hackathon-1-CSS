@@ -12,8 +12,8 @@
 <body>
     <!--Start-->
     <div class="main">
-        <!--NAVBAR-->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary py-3">
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary py-3 fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="Images/Logo.png" alt="Logo" class="logo">
@@ -25,7 +25,7 @@
                 </button>
 
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                    <ul class="navbar-nav mb-2 mb-lg-0 align-items-lg-center gap-3">
+                    <ul class="navbar-nav mb-2 mb-lg-0 align-items-lg-center gap-lg-3">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
@@ -49,23 +49,26 @@
             </div>
         </nav>
 
-        <!--Hero-section-->
-        <div class="container col-xxl-8 px-4 py-5">
-            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-              <div class="col-10 col-sm-8 col-lg-6">
-                <img src="Images/Illustration.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
-              </div>
-              <div class="col-lg-6">
-                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Lesson and Insights from 8 Years</h1>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                  <button type="button" class="btn btn-success btn-lg px- me-md-2">Register</button>
-                  
+        <!-- Hero-section -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 order-lg-1 order-2">
+                        <div class="hero-content">
+                            <h1 class="mb-4">Lessons and Insights from 8 Years</h1>
+                            <p class="lead">Where to grow your business as a photographer: site or social media?</p>
+                            <div class="d-flex gap-3">
+                                <button class="btn btn-success btn-lg px-4">Register</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-lg-2 order-1 mb-4 "
+                        style="display: flex; justify-content: center; align-items: center; text-align: center;  margin-bottom: 10px; margin-bottom: 20px; margin-top: 300px;">
+                        <img src="Images/Illustration.png" alt="Illustration" class="img-fluid hero-img">
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-
-
+        </section>
     </div>
 
     <script src="bootstrap-5.3.5-dist/bootstrap-5.3.5-dist/js/bootstrap.min.js"></script>

@@ -2,22 +2,28 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  body {
-    font-family: sans-serif;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #fff;
-  }
-  
-  /* Navbar logo */
-  .logo {
+    line-height: 1.6;
+}
+
+/* Navbar logo */
+.logo {
     width: 150px;
     height: auto;
-  }
-  
-  /* Navbar button */
-  .button-9 {
-    appearance: button;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+/* Navbar button */
+.button-9 {
+    appearance: none;
     background-color: #254703;
     border-radius: 6px;
     border: none;
@@ -25,27 +31,56 @@
     cursor: pointer;
     font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, sans-serif;
     font-size: 1rem;
+    font-weight: 500;
     height: 40px;
     padding: 0 20px;
     text-align: center;
     text-transform: none;
     transition: all 0.3s ease;
-  }
-  
-  .button-9:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.button-9:hover {
     background-color: #1d3a02;
-  }
-  
-  .button-9:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.button-9:focus {
     outline: none;
     box-shadow: 0 0 0 3px rgba(37, 71, 3, 0.5);
-  }
-  
-/*Navbar media query*/
-  @media (max-width: 991px) {
+}
+
+.button-9:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar media query */
+@media (max-width: 991px) {
     .button-9 {
-      width: 100%;
-      margin-top: 10px;
+        width: 100%;
+        margin: 10px 0 5px;
+        height: 45px;
+        font-size: 1.05rem;
     }
-  }
-  
+    
+    .logo {
+        width: 130px;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo {
+        width: 110px;
+    }
+    
+    .button-9 {
+        height: 42px;
+        padding: 0 15px;
+    }
+}
