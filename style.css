@@ -1,36 +1,60 @@
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  body {
+}
+
+/* Body Styling */
+body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #fff;
     line-height: 1.6;
-    padding-top: 80px; /* navbar ke liye space */
-  }
-  
-  /* Navbar logo */
-  .logo {
+    padding-top: 80px; /* Navbar ke liye space */
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
     width: 150px;
     height: auto;
     transition: transform 0.3s ease;
-  }
-  
-  .logo:hover {
+}
+
+.logo:hover {
     transform: scale(1.05);
-  }
-  
-  /* Navbar button */
-  .button-9 {
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-color: #254703;
+}
+
+.nav-link {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.nav-link:hover {
+    color: #254703;
+}
+
+.button-9 {
     appearance: none;
     background-color: #254703;
     border-radius: 6px;
     border: none;
     color: #fff;
     cursor: pointer;
-    font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, sans-serif;
     font-size: 1rem;
     font-weight: 500;
     height: 40px;
@@ -41,73 +65,74 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  .button-9:hover {
+}
+
+.button-9:hover {
     background-color: #1d3a02;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-  }
-  
-  .button-9:focus {
+}
+
+.button-9:focus {
     outline: none;
     box-shadow: 0 0 0 3px rgba(37, 71, 3, 0.5);
-  }
-  
-  .button-9:active {
+}
+
+.button-9:active {
     transform: translateY(0);
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Hero Section */
-  .hero-section {
+}
+
+/* Hero Section */
+.hero-section {
     padding: 100px 0;
-  }
-  
-  .hero-content h1 {
+}
+
+.hero-content h1 {
     font-size: 2.5rem;
     font-weight: bold;
-  }
-  
-  .hero-content p {
+}
+
+.hero-content p {
     font-size: 1.125rem;
-  }
-  
-  .hero-img {
+}
+
+.hero-img {
     max-width: 100%;
     height: auto;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 991px) {
+}
+
+/* Responsive Design for Hero Section */
+@media (max-width: 991px) {
     .button-9 {
-      width: 100%;
-      margin: 10px 0;
+        width: 100%;
+        margin: 10px 0;
     }
-  
+
     .logo {
-      width: 130px;
+        width: 130px;
     }
-  
+
     .hero-content h1 {
-      font-size: 2rem;
+        font-size: 2rem;
     }
-  }
-  
-  @media (max-width: 576px) {
+}
+
+@media (max-width: 576px) {
     .logo {
-      width: 110px;
+        width: 110px;
     }
-  
+
     .hero-content h1 {
-      font-size: 1.75rem;
+        font-size: 1.75rem;
     }
-  
+
     .hero-content p {
-      font-size: 1rem;
+        font-size: 1rem;
     }
-  }
-/*scrolling line*/  
+}
+
+/* Scrolling Line */
 .scrolling-line {
     overflow: hidden;
     width: 100%;
@@ -121,16 +146,104 @@
 }
 
 .images img {
-    max-height: 50px; 
-    width: auto; 
-    margin-right: 20px; 
+    max-height: 50px;
+    width: auto;
+    margin-right: 100px;
 }
 
 @keyframes scroll {
     0% {
-        transform: translateX(100%);
+        transform: translateX(0);
     }
     100% {
         transform: translateX(-100%);
     }
 }
+
+/* Community Section */
+.community-main {
+    text-align: center;
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.community-main h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.community-main p {
+    font-size: 1.125rem;
+    color: #777;
+}
+
+/* Featured Section */
+/* Featured Section */
+.feature {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+.feature img {
+    max-width: 80px; /* Set maximum width for images */
+    height: auto;
+    margin-bottom: 20px; /* Space between image and text */
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Hover effect for the feature cards */
+.feature:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #e9f9f9;
+}
+
+/* Make images and text responsive */
+@media (max-width: 768px) {
+    .feature {
+        padding: 15px;
+    }
+
+    .feature img {
+        max-width: 60px;
+    }
+
+    .feature h3 {
+        font-size: 1.3rem;
+    }
+
+    .feature p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .feature img {
+        max-width: 50px;
+    }
+
+    .feature h3 {
+        font-size: 1.1rem;
+    }
+
+    .feature p {
+        font-size: 0.85rem;
+    }
+}
+
+
+
+
+
