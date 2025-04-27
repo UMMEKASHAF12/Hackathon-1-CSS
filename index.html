@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Responsive Navbar</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bootstrap-5.3.5-dist/bootstrap-5.3.5-dist/css/bootstrap.min.css">
 </head>
@@ -13,54 +13,65 @@
     <!--Start-->
     <div class="main">
         <!--NAVBAR-->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary py-3">
             <div class="container">
-                <img src="Images/Logo.png" alt="">
+                <a class="navbar-brand" href="#">
+                    <img src="Images/Logo.png" alt="Logo" class="logo">
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-2" style="margin-left: 350px;">
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 align-items-lg-center gap-3">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Features</a>
+                            <a class="nav-link" href="#">Features</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Community</a>
+                            <a class="nav-link" href="#">Community</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Blog</a>
+                            <a class="nav-link" href="#">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Pricing</a>
+                            <a class="nav-link" href="#">Pricing</a>
                         </li>
-                        <button class="button-9" role="button">Register Now</button>
-                        
-                        
-
+                        <li class="nav-item">
+                            <button class="button-9" role="button">Register Now</button>
+                        </li>
                     </ul>
-
                 </div>
             </div>
         </nav>
 
+        <!--Hero-section-->
+        <div class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+              <div class="col-10 col-sm-8 col-lg-6">
+                <img src="Images/Illustration.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+              </div>
+              <div class="col-lg-6">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Lesson and Insights from 8 Years</h1>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                  <button type="button" class="btn btn-success btn-lg px- me-md-2">Register</button>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
 
 
     </div>
 
-
-
-
     <script src="bootstrap-5.3.5-dist/bootstrap-5.3.5-dist/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js"
-        integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+"
         crossorigin="anonymous"></script>
 </body>
 
